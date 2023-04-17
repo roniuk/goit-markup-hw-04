@@ -310,7 +310,8 @@ margin-bottom: 8px;
 
 .name-sektion-two,
 .name-sektion-three,
-.name-sektion-fo {
+.name-sektion-fo,
+.name-section-five {
     margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
@@ -331,6 +332,17 @@ margin-bottom: 8px;
 }
 
 /*  /////////   INDEX   SECTION 4  ////////////  */
+.cardcontent {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+
+}
+  
+.section-five {
+    margin-bottom: 100px;
+}
 
 .section-fo {
         padding-top: 120px;
@@ -384,6 +396,32 @@ border-radius: 0px 0px 4px 4px;
     text-align: center;
 }
 
+/* ////////////////  CUSTOMERS LIST  ////////////// */
+
+
+.clients-list {
+display: flex;
+align-items: center;
+gap: 24px;;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: 1px solid #404BBF;
+    border-radius: 4px;
+
+}
 /* ////////////////  PORTFOLIO - HTML  ////////////// */
 
 .portfolio-buttons {
