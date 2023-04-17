@@ -173,6 +173,7 @@ margin-right: auto;
 /* /////////////////  INDEX - HTML   //////////////////////// */
 
 .hero-image {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7));
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     background-image: url('../images/people-office 1.jpg');
     max-width: 1440px;
