@@ -10,6 +10,7 @@
         --border-color: #e7e9fc;
         --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        --clients-icon-color: #8E8F99;
         }
 
 body {
@@ -316,7 +317,7 @@ margin-bottom: 8px;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.11;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -341,6 +342,8 @@ margin-bottom: 8px;
 }
   
 .section-five {
+    padding-top: 120px;
+    padding-bottom: 120px;
     margin-bottom: 100px;
 }
 
@@ -397,7 +400,9 @@ border-radius: 0px 0px 4px 4px;
 }
 
 /* ////////////////  CUSTOMERS LIST  ////////////// */
-
+.clients-icon {
+    fill: currentColor;
+}
 
 .clients-list {
 display: flex;
@@ -411,14 +416,15 @@ gap: 24px;;
     justify-content: center;
     width: 168px;
     height: 88px;
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--clients-icon-color);
     border-radius: 4px;
 
 }
 
 .clients-link:hover,
 .clients-link:focus {
-    border-color: 1px solid #404BBF;
+    border-color: 1px solid var(--ocean);
+    color: var(--ocean);
     border-radius: 4px;
 
 }
