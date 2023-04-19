@@ -126,8 +126,8 @@ margin-right: auto;
         gap: 40px;
         align-items: center; 
         list-style: none;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        /* padding-top: 24px;
+        padding-bottom: 24px; */
         
         /* border: #10b65b solid 3px; */
  } 
@@ -136,7 +136,8 @@ margin-right: auto;
     
     padding-top: 24px;
     padding-bottom: 24px;
-    font-weight: 500;
+    font-weight: 400;
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -160,7 +161,6 @@ margin-right: auto;
 
 
 .contact-link {
-    gap: 40px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -175,13 +175,13 @@ margin-right: auto;
 /* /////////////////  INDEX - HTML   //////////////////////// */
 
 .hero-image {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7));
-    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-    background-image: url('../images/people-office 1.jpg'); */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office 1.jpg');
     max-width: 1440px;
-    background-repeat: no-repeat;
+    height: 600px;
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
     background-size: cover;
     
     /* background-color: var(--navy-blue);  */
@@ -197,13 +197,12 @@ margin-right: auto;
 .hero-image > .container {
     
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 .hero-imag-name {
     margin-left: auto;
     margin-right: auto;
     max-width: 496px;
-    margin-top: 24px; 
     margin-bottom: 48px; 
 font-size: 56px;
 line-height: 1.07;
@@ -303,12 +302,7 @@ margin-bottom: 8px;
 /*  //////////////-- INDEX -- SECTION 3 ---////////////////  */
 .section-three {
     padding-bottom: 120px; 
-
-    /* margin-left: 156px; */
-    align-items: center;
     width: 1128;
-
-    margin-bottom: 50px;
 }
 
 .name-sektion-two,
@@ -353,11 +347,6 @@ margin-bottom: 8px;
         padding-top: 120px;
         padding-bottom: 120px;
         background-color: var(--cloud); 
-        /* padding-top: 106px; 
-        padding-bottom: 246px; */
-        align-items: center;
-        /* width: 1128;   */
-        margin-bottom: 71px; 
 }
 
  .name-sektion-fo-elem {
@@ -524,19 +513,20 @@ gap: 24px;;
 
 /*  ////////////////   FUTER  ///////////////////  */
  .footer-site {
-    display: flex;
-    align-items: baseline;
-    margin-right: 120px;
     background-color: var(--navy-blue);
     padding-top: 100px;
-    padding-bottom: 100px;
-    /* width: 1440px;  */
-    border: #979cc7 solid 5px;
+    padding-bottom: 100px; 
 } 
+
+
+.footer-container {
+display: flex; 
+align-items: baseline;
+}
+
 
 .footer-site .logo{
 display: inline-block;
-margin-bottom: 16px;
 }
 
 .futer-logo-link {
@@ -548,6 +538,7 @@ margin-bottom: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
+    display: block;
     margin-bottom: 16px;
 }
 .footer .logo:hover,
@@ -575,37 +566,27 @@ margin-bottom: 16px;
         letter-spacing: 0.02em;
         max-width: 264px;
         color:var(--cornflower);
+        text-decoration: none;
+        margin-bottom: 16px;
     
         
 }
 
 .footer-left {
-border: #5e0c0c solid 2px;
-width: 264px;
+    margin-right: 120px;
+/* border: #5e0c0c solid 2px; */
+/* width: 264px; */
 }
-.footer-soclink {
-    padding-top: 100px;
-    /* width: 218px; */
-/* margin-left: 120px; */
+
+.footer-right {
+     /* border: #098d77 solid 2px;  */
 
 }
-.social-media {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    /* margin-left: 520px; */
-    width: 208px;
-    padding-top: 100px;
-    letter-spacing: 0.02em;
-    color: var(--cornflower);
-    border: #098d77 solid 2px;
-
-}
-.footer-list {
+/* .footer-list {
     display: flex;
-    /* display: inline-block;  */
+    display: inline-block;  
     align-items: center;
     
-}
+} 
+*/
+
