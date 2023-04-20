@@ -577,11 +577,6 @@ display: inline-block;
 /* width: 264px; */
 }
 
-.footer-right {
-     /* border: #098d77 solid 2px;  */
-
-}
-
 .social-media {
      font-weight: 500;
      color: var(--base-wait-color);
@@ -591,8 +586,9 @@ display: inline-block;
 .cardcontent {
     gap: 16px;
 }
-.socials-icon {
+.li-footer {
     height: 40px;
+    width: 40px;
 }
 
 .socials-link {
@@ -611,7 +607,7 @@ justify-content: center;
     background-color:var(--socials);
 }
 
-.socials-icon {
+.socials-icon-footer {
  width: 24px;
  height: 24px;
  fill:var(--cloud);
