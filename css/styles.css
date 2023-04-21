@@ -330,10 +330,11 @@ margin-bottom: 8px;
 /*  /////////   INDEX   SECTION 4  ////////////  */
 .cardcontent {
     display: flex;
+    gap: 24px;
+    max-height: 24px;
     justify-content: center;
-    gap: 10px;
+    background-position: center;
     margin-top: 8px;
-
 }
   
 .section-five {
@@ -368,7 +369,8 @@ margin-bottom: 8px;
 }
 
 .name-worker {
-padding: 32px 16px;
+padding: 32px 0; 
+/* padding: 32px 16px;  */
 border-radius: 0px 0px 4px 4px;
 }
 
@@ -583,9 +585,9 @@ display: inline-block;
 
 }
 
-.cardcontent {
+/* .cardcontent {
     gap: 16px;
-}
+} */
 .li-footer {
     height: 40px;
     width: 40px;
@@ -611,4 +613,10 @@ justify-content: center;
  width: 24px;
  height: 24px;
  fill:var(--cloud);
+}
+
+.socials-icon {
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
 }
