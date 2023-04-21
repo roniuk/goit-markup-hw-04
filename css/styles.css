@@ -596,9 +596,16 @@ display: inline-block;
 
 }
 
-/* .cardcontent {
-    gap: 16px;
-} */
+ .cardconten-futer {
+        display: flex;
+        gap: 16px;
+        max-height: 24px;
+        justify-content: center;
+        background-position: center;
+        margin-top: 8px;
+} 
+
+
 .li-footer {
     height: 40px;
     width: 40px;
