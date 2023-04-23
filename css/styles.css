@@ -14,6 +14,12 @@
         --socials: #31d0aa;
         }
 
+*,
+*::before,
+* ::after {
+box-sizing: border-box;
+}
+
 body {
         font-family: Roboto, sans-serif;
         color: var(--slate-text);
@@ -121,23 +127,20 @@ display: flex;
 gap: 40px;
 margin-right: auto;
 }
-  /* .page-nav > .menu > .list, */
+
   .address > .list {
         display: flex;
         gap: 40px;
         align-items: center; 
         list-style: none;
-        /* padding-top: 24px;
-        padding-bottom: 24px; */
-        
-        /* border: #10b65b solid 3px; */
+       
  } 
 
- .menu-link, .contact-link {
+ .menu-link {
     
     padding-top: 24px;
     padding-bottom: 24px;
-    font-weight: 400;
+    font-weight: 500;
     display: block;
     font-size: 16px;
     line-height: 1.5;
@@ -145,6 +148,17 @@ margin-right: auto;
     color: var(--navy-blue);
  } 
 
+ .contact-link {
+    padding-top: 24px;
+        padding-bottom: 24px;
+        font-weight: 400;
+        display: block;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--slate-text);
+    }
+ 
 .menu-link:hover,
 .menu-link:focus {
     color: var(--ocean);
@@ -155,18 +169,12 @@ margin-right: auto;
     display: flex;
     gap: 40px;
     align-items: center;
-    /* padding-left: 226px; */
     display: flex;
     font-style: normal;
 } 
 
 
-.contact-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate-text);
-}
+
 
 .contact-link:hover,
 .contact-link:focus {
@@ -186,18 +194,10 @@ margin-right: auto;
     background-size: cover;
     text-align: center;
     padding: 188px 0;
-    /* padding-top: 188px;
-    padding-bottom: 188px; */
+   
 
 }
 
-
-/* .hero-image > .container {
-    
-    margin-left: auto;
-    margin-right: auto; 
-}
- */
  .hero-imag-name {
     margin-left: auto;
     margin-right: auto; 
@@ -229,6 +229,9 @@ color: var(--base-wait-color);
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
 }
 
 .btn:hover,
@@ -274,8 +277,7 @@ margin-bottom: 8px;
 
 .section-two-elem {
     flex-basis: calc((100% - 3 * 24px) / 4); 
-    /* flex-basis: calc((100% - 72px) / 4);
-    width: calc((100% - 72px) / 4);   */
+   
 }
 
 .name-sektion-elem {
@@ -299,6 +301,7 @@ margin-bottom: 8px;
 
 }
 /*  //////////////-- INDEX -- SECTION 3 ---////////////////  */
+
 .section-three {
     padding-bottom: 120px; 
     width: 1128;
@@ -331,7 +334,7 @@ margin-bottom: 8px;
 .cardcontent {
     display: flex;
     gap: 24px;
-    max-height: 24px;
+    /* max-height: 24px; */
     justify-content: center;
     background-position: center;
     margin-top: 8px;
@@ -340,7 +343,6 @@ margin-bottom: 8px;
 .section-five {
     padding-top: 120px;
     padding-bottom: 120px;
-    margin-bottom: 100px;
 }
 
 .section-fo {
@@ -370,57 +372,62 @@ margin-bottom: 8px;
 
 .name-worker {
 padding: 32px 0; 
-/* padding: 32px 16px;  */
 border-radius: 0px 0px 4px 4px;
 }
 
-/* .subname-fo {
-    text-align: center;
-    margin-bottom: 8px;
-} */
-
 .section-fo .text {
-    /* font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px; */
-        /* or 150% */
-    
     letter-spacing: 0.02em;
     text-align: center;
 }
 
-/* ////////////////  CUSTOMERS LIST  ////////////// */
-.clients-icon {
-    fill: currentColor;
+/* ////////////////  CUSTOMERS LIST  5 SECTION ////////////// */
+.customer {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.clients-list {
+.customers {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-bottom: 72px;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    line-height: 1.1;
+}
+
+.client-list {
 display: flex;
-align-items: center;
 gap: 24px;;
-}
+} 
 
-.clients-link {
+.client-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 168px;
     height: 88px;
     border: 1px solid var(--clients-icon-color);
-    color: var(--clients-icon-color);
-    border-radius: 4px;
+    border-radius: 4px; 
+    color: #8e8f99;
+    transition: color var(--animation), border var(--animation);
+    
 
 }
 
-.clients-link:hover,
-.clients-link:focus {
-    border-color: 1px solid var(--ocean);
-    color: var(--ocean);
-    border-radius: 4px;
-
+.client-link:hover,
+.client-link:focus {
+    border: 1px solid #404bbf;
+    color:#404bbf;
 }
+
+.client-icons {
+    fill: currentColor;
+}
+/* .client-icons:hover {
+fill: var(--ocean);
+} */
 /* ////////////////  PORTFOLIO - HTML  ////////////// */
 
 .portfolio-buttons {
@@ -440,7 +447,6 @@ gap: 24px;;
     padding: 12px 24px;
     border: 1px solid var(--border-color);
     color: var(--iris);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--cloud);
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -451,6 +457,7 @@ gap: 24px;;
     text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .btn-port:hover,
@@ -458,7 +465,6 @@ gap: 24px;;
     color: var(--base-wait-color);
     background-color: var(--ocean); 
     border: 1px solid transparent;
-    border-radius: 4px;
 }
 
 .btn-port:focus {
@@ -473,9 +479,6 @@ gap: 24px;;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    
-    /* align-items: center; */
-    /* width: 1128; */
 }
 
 .port-item {
@@ -524,6 +527,7 @@ box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16
 }
 
 /*  ////////////////   FUTER  ///////////////////  */
+
  .footer-site {
     background-color: var(--navy-blue);
     padding-top: 100px;
@@ -578,31 +582,27 @@ display: inline-block;
         letter-spacing: 0.02em;
         max-width: 264px;
         color:var(--cornflower);
-        text-decoration: none;
-        margin-bottom: 16px;
-    
-        
+        text-decoration: none;      
 }
 
 .footer-left {
     margin-right: 120px;
-/* border: #5e0c0c solid 2px; */
-/* width: 264px; */
 }
 
 .social-media {
      font-weight: 500;
      color: var(--base-wait-color);
+     margin-bottom: 16px;
 
 }
 
  .cardconten-futer {
         display: flex;
         gap: 16px;
-        max-height: 24px;
+        /* max-height: 24px; */
         justify-content: center;
         background-position: center;
-        margin-top: 8px;
+        /* margin-top: 8px; */
 } 
 
 
