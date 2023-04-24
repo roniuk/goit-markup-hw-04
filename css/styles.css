@@ -423,12 +423,9 @@ gap: 24px;;
 }
 
 .client-icons {
-    fill: var(--color1, #8e8f99);
-    
+    fill: currentColor; 
 }
-.client-icons:hover {
-fill: var(--ocean);
-}
+
 /* ////////////////  PORTFOLIO - HTML  ////////////// */
 
 .portfolio-buttons {
